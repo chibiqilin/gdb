@@ -5,6 +5,7 @@ import csv
 import argparse
 from IPython.display import display
 import pandas as pd
+import os
 
 
 # Instantiate the parser
@@ -17,6 +18,10 @@ parser.add_argument("--size", "-s", type=int,
                     help='Reference size n. Default: 400', required=False)
 parser.add_argument("--range", "-r", type=int,
                     help='Size range +/- n bp. Default: 150', required=False)
+parser.add_argument("--lowerBound", "-l", type=int,
+                    help='Overrides lower bound defined by range.', required=False)
+parser.add_argument("--upperBound", "-u", type=int,
+                    help='Overrides upper bound defined by range.', required=False)
 parser.add_argument("--name", "-n", type=str,
                     help='Marker name. Default: File Name', required=False)
 parser.add_argument("--verbose", "-v", action="store_true")
@@ -35,7 +40,10 @@ if args.file is not None:
     samples=int((rows-1)/read_height)
     ref_size = 400 if args.size is None else args.size # Ref size Default: 400
     ref_range = 150 if args.range is None else args.range # Ref range Default: 150
-    size_range = range(max(0,ref_size-ref_range), ref_size+ref_range+1)
+    lBound = (ref_size-ref_range) if args.lowerBound is None else args.lowerBound
+    uBound = (ref_size+ref_range+1) if args.upperBound is None else args.upperBound
+    size_range = range(max(0,lBound), uBound)
+    # print(size_range)
     c_ratio = 0.5 # Concentration ratio
     a_ratio = 0.5 # Ambiguous ratio
     h_ratio = 0.5 # Height ratio
@@ -184,6 +192,7 @@ if args.file is not None:
     df = pd.DataFrame(rows, columns = ["Source", "Well", "A1", "A2", "A3", "C1", "C2", "C3", "H1", "H2", "H3", "Notes"])
     # Print
     if args.verbose:
-        print ("Reference size: ",ref_size,", Size Range: ",ref_range)
+        print (name," (",size_range,")")
         display(df.to_string())
-    df.to_csv('output_'+args.file,index=False)
+    fileName = str(f'{os.path.split(args.file)[0] + "/output_" + os.path.split(args.file)[1]}')
+    df.to_csv(fileName,index=False)

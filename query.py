@@ -28,7 +28,9 @@ parser.add_argument("--folder", "-f", type=str,
 # Optional arguments
 parser.add_argument("--num", "-n", type=int,
                     help='Number of returned results in the query', required=False)
+parser.add_argument("--verbose", "-v", action="store_true")
 parser.set_defaults(num=3)
+parser.set_defaults(verbose=False)
 
 args = parser.parse_args()
 
@@ -42,7 +44,7 @@ data.columns = ["InternalID",
     "M5", "A13", "A14", "A15", "C13", "C14", "C15",
     "M6", "A16", "A17", "A18", "C16", "C17", "C18",
 ]
-print(data)
+#print(data)
 
 # Split string, [2] for A1, [3] for A2
 #query = args.string.split(',')
@@ -59,6 +61,15 @@ if fileCount > max_markers:
     print("Error: too many markers in input folder.")
     exit()
 
+if fileCount < max_markers:
+    print("Caution: there are fewer than 6 input markers in "+args.folder+". Input files: ",fileCount)
+    # Allow user to continue but warn that there are fewer markers
+    user_input = input('Would you like to continue? (Y/n): ')
+    if user_input.lower() == 'n':
+        print('Aborting search')
+        exit()
+    else:
+        print('Continuing with ',fileCount,' files.')
 
 # Iterate each file in folder
 # for file in inputFolder:
@@ -99,7 +110,7 @@ with ExitStack() as stack:
         rowCount = min(rowCount, len(inputCSV[i].index))
 
     # For each row in input
-    #for count in range(rowCount):
+    # for count in range(rowCount):
     for count in range(4): # Print just 1 row
         # Initialize distance
         data["Distance"] = (0)
@@ -160,7 +171,10 @@ with ExitStack() as stack:
         #print(count)
         #print(data)
         # print(data.head(args.num))
-        print(data.sort_values(by=["Distance"]).head(args.num))
+        if args.verbose:
+            print(data.sort_values(by=["Distance"]).head(args.num))
+        # for x in data.sort_values(by=["Distance"]).head(args.num).itterows():
+            # print(data['InternalID'])
 
 
 #print(data.sort_values(by=["Distance"]).head(args.num))

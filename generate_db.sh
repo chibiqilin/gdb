@@ -1,14 +1,13 @@
 #!/bin/bash
 
 prefix="EXP" # File output name and prefix
-np="NP " # No Peak Check
 
 usage() {
    cat << EOF
 Usage: generate_db.sh <folder> [, prefix]
 
   Required
-	file Folder containing parse_report.py output files
+	folder Folder containing parse_report.py output files
 
   [Optional]
   prefix  Internal ID prefix and database output name E.G. "WGS" (default: EXP)
@@ -18,17 +17,25 @@ EOF
    exit 1
 }
 
+
 if [[ ! $# -ge 1 || $# -ge 3 ]]; then
 	usage;
 fi
 
+# Check for '/' in folder string
+if [[ "$1" == *\/ ]]; then
+  folder="$1"
+else
+  folder="$1/"
+fi
+
 # Check directory
-files=$(shopt -s nullglob dotglob; echo ${1}output_*.csv)
+files=$(shopt -s nullglob dotglob; echo ${folder}output_*.csv)
 if (( ${#files} ))
 then
-  echo "Loading $1"
+  echo "Loading ${folder}"
 else
-  echo "Error: Directory containing output_*.csv files required. $1 is empty (or does not exist or is a file)"
+  echo "Error: Directory containing output_*.csv files required. ${folder} is empty (or does not exist or is a file)"
   exit 1
 fi
 
@@ -38,9 +45,19 @@ fi
 
 #for ((i = 0; i < 99; ++i)); do printf -v num '%07d' $i; echo $num; done
 
-cd $1
+cd $folder
 
-rm $prefix
+if [ -f "$prefix" ]; then
+  read -p 'Database already exists. Overwrite the file? (y/N): ' yn
+  case $yn in
+    y* )
+      echo "Backing up file.";
+      cp "$prefix" "$prefix.$(date +%d%m%Y)";;
+    * )
+      echo "Exiting.";
+      exit 1;;
+  esac
+fi
 
 # Setup db
 for i in {1..94}
@@ -49,7 +66,7 @@ do
     echo ${prefix}$count >> $prefix
 done
 
-for f in output_*
+for f in output_*.csv
 do
   echo $f
   counter=1
