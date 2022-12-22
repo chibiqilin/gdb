@@ -24,15 +24,22 @@ parser.add_argument("--database", "-d", type=str,
                     help='Specify Genotype Data Database File',required=True)
 parser.add_argument("--folder", "-f", type=str,
                     help='Folder containing processed QIAxcel files', required=True)
+parser.add_argument("--samples", "-s", type=str,
+                    help='Specify Samples Data File',required=True)
 
 # Optional arguments
 parser.add_argument("--num", "-n", type=int,
                     help='Number of returned results in the query', required=False)
 parser.add_argument("--verbose", "-v", action="store_true")
+parser.add_argument("--output", "-o", type=str,
+                    help='Specify output file and write results', required=False)
 parser.set_defaults(num=3)
 parser.set_defaults(verbose=False)
 
 args = parser.parse_args()
+
+# Load Samples file
+samples_data = pd.read_csv(args.samples, sep='\t')
 
 # Load Genotype Data Database file
 data = pd.read_csv(args.database, sep=',', header=None)
@@ -45,6 +52,13 @@ data.columns = ["InternalID",
     "M6", "A16", "A17", "A18", "C16", "C17", "C18",
 ]
 #print(data)
+
+# Initialize output
+
+if args.output is not None:
+    print("Outputting to "+args.output)
+    out_file = open(args.output, "w")
+    out_file.write("Query Results on "+args.folder+"\n")
 
 # Split string, [2] for A1, [3] for A2
 #query = args.string.split(',')
@@ -111,7 +125,7 @@ with ExitStack() as stack:
 
     # For each row in input
     # for count in range(rowCount):
-    for count in range(4): # Print just 1 row
+    for count in range(4): # Print just 4 rows
         # Initialize distance
         data["Distance"] = (0)
 
@@ -173,9 +187,19 @@ with ExitStack() as stack:
         # print(data.head(args.num))
         if args.verbose:
             print(data.sort_values(by=["Distance"]).head(args.num))
-        # for x in data.sort_values(by=["Distance"]).head(args.num).itterows():
-            # print(data['InternalID'])
+        if args.output is not None:
+            out_file.write("\nSample "+str(count)+":\n")
+            out_file.write('\t'.join(samples_data.columns.values.tolist())+'\n')
 
+        # print(samples_data)
+        for row in data.sort_values(by=["Distance"]).head(args.num).itertuples():
+            row.InternalID
+            # print(row.InternalID)
+            # print(samples_data.loc[samples_data['dbID'] == row.InternalID])
+            if args.output is not None:
+                result = samples_data.loc[samples_data['dbID'] == row.InternalID].values.flatten().tolist()
+                # print(result)
+                out_file.write('\t'.join(str(s) for s in result)+"\n")
 
 #print(data.sort_values(by=["Distance"]).head(args.num))
 

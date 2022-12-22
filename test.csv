@@ -1,0 +1,25 @@
+Query Results on input
+
+Sample 0:
+dbID	LabID	*sample_name	sample_title	bioproject_accession	*organism	isolate	cultivar	ecotype	age	dev_stage	*geo_loc_name	*tissue	biomaterial_provider	cell_line	cell_type	collected_by	collection_date	culture_collection	disease	disease_stage	genotype	growth_protocol	height_or_length	isolation_source	lat_lon	phenotype	population	sample_type	sex	specimen_voucher	temp	treatment	description
+EXP000001	57	nan	nan	nan	Vitis vinifera	nan	Chardonnay FPS 69	nan	nan	nan	Canada/Ontario/Niagara/CFIA	Leaves	nan	nan	nan	SP/LZ	27-04-2022	nan	nan	nan	nan	nan	nan	nan	nan	White	nan	nan	nan	nan	nan	nan	nan
+EXP000003	44A	nan	nan	nan	Vitis vinifera 	nan	Chardonnay 548	nan	nan	nan	Canada/Ontario/Niagara	Leaves	nan	nan	nan	JW/S	6/31/2021	nan	nan	nan	nan	nan	nan	nan	nan	White	nan	nan	nan	nan	nan	nan	nan
+EXP000002	8	nan	nan	nan	Vitis vinifera 	nan	Chardonnay	nan	nan	nan	Canada/Ontario/Niagara/Henry of Pelham	Leaves	nan	nan	nan	JW/PL	31-07-2019	nan	nan	nan	nan	nan	nan	nan	nan	White	nan	nan	nan	nan	nan	nan	nan
+
+Sample 1:
+dbID	LabID	*sample_name	sample_title	bioproject_accession	*organism	isolate	cultivar	ecotype	age	dev_stage	*geo_loc_name	*tissue	biomaterial_provider	cell_line	cell_type	collected_by	collection_date	culture_collection	disease	disease_stage	genotype	growth_protocol	height_or_length	isolation_source	lat_lon	phenotype	population	sample_type	sex	specimen_voucher	temp	treatment	description
+EXP000002	8	nan	nan	nan	Vitis vinifera 	nan	Chardonnay	nan	nan	nan	Canada/Ontario/Niagara/Henry of Pelham	Leaves	nan	nan	nan	JW/PL	31-07-2019	nan	nan	nan	nan	nan	nan	nan	nan	White	nan	nan	nan	nan	nan	nan	nan
+EXP000027	29	nan	nan	nan	Vitis vinifera 	nan	Pinot gris	nan	nan	nan	Canada/Ontario/Niagara/Henry of Pelham	Leaves	nan	nan	nan	JW/PL	31-07-2019	nan	nan	nan	nan	nan	nan	nan	nan	Red	nan	nan	nan	nan	nan	nan	nan
+EXP000003	44A	nan	nan	nan	Vitis vinifera 	nan	Chardonnay 548	nan	nan	nan	Canada/Ontario/Niagara	Leaves	nan	nan	nan	JW/S	6/31/2021	nan	nan	nan	nan	nan	nan	nan	nan	White	nan	nan	nan	nan	nan	nan	nan
+
+Sample 2:
+dbID	LabID	*sample_name	sample_title	bioproject_accession	*organism	isolate	cultivar	ecotype	age	dev_stage	*geo_loc_name	*tissue	biomaterial_provider	cell_line	cell_type	collected_by	collection_date	culture_collection	disease	disease_stage	genotype	growth_protocol	height_or_length	isolation_source	lat_lon	phenotype	population	sample_type	sex	specimen_voucher	temp	treatment	description
+EXP000003	44A	nan	nan	nan	Vitis vinifera 	nan	Chardonnay 548	nan	nan	nan	Canada/Ontario/Niagara	Leaves	nan	nan	nan	JW/S	6/31/2021	nan	nan	nan	nan	nan	nan	nan	nan	White	nan	nan	nan	nan	nan	nan	nan
+EXP000002	8	nan	nan	nan	Vitis vinifera 	nan	Chardonnay	nan	nan	nan	Canada/Ontario/Niagara/Henry of Pelham	Leaves	nan	nan	nan	JW/PL	31-07-2019	nan	nan	nan	nan	nan	nan	nan	nan	White	nan	nan	nan	nan	nan	nan	nan
+EXP000057	14	nan	nan	nan	Vitis vinifera	nan	Pinot Noir FPS 71	nan	nan	nan	Canada/Ontario/Niagara/CFIA	Leaves	nan	nan	nan	SP/LZ	27-04-2022	nan	nan	nan	nan	nan	nan	nan	nan	Red	nan	nan	nan	nan	nan	nan	nan
+
+Sample 3:
+dbID	LabID	*sample_name	sample_title	bioproject_accession	*organism	isolate	cultivar	ecotype	age	dev_stage	*geo_loc_name	*tissue	biomaterial_provider	cell_line	cell_type	collected_by	collection_date	culture_collection	disease	disease_stage	genotype	growth_protocol	height_or_length	isolation_source	lat_lon	phenotype	population	sample_type	sex	specimen_voucher	temp	treatment	description
+EXP000004	46	nan	nan	nan	Vitis vinifera 	nan	Chardonnay 809	nan	nan	nan	Canada/Ontario/Niagara/Chateau de Charmes	Leaves	nan	nan	nan	JW/S	6/31/2021	nan	nan	nan	nan	nan	nan	nan	nan	White	nan	nan	nan	nan	nan	nan	nan
+EXP000009	48	nan	nan	nan	Vitis vinifera 	nan	Chardonnay 116	nan	nan	nan	Canada/Ontario/Niagara	Leaves	nan	nan	nan	JW/S	6/31/2021	nan	nan	nan	nan	nan	nan	nan	nan	White	nan	nan	nan	nan	nan	nan	nan
+EXP000005	52	nan	nan	nan	Vitis vinifera 	nan	Chardonnay 96	nan	nan	nan	Canada/Ontario/Niagara	Leaves	nan	nan	nan	JW/S	6/31/2021	nan	nan	nan	nan	nan	nan	nan	nan	White	nan	nan	nan	nan	nan	nan	nan

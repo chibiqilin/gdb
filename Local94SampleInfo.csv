@@ -1,0 +1,95 @@
+dbID	LabID	*sample_name	sample_title	bioproject_accession	*organism	isolate	cultivar	ecotype	age	dev_stage	*geo_loc_name	*tissue	biomaterial_provider	cell_line	cell_type	collected_by	collection_date	culture_collection	disease	disease_stage	genotype	growth_protocol	height_or_length	isolation_source	lat_lon	phenotype	population	sample_type	sex	specimen_voucher	temp	treatment	description
+EXP000003	44A				Vitis vinifera 		Chardonnay 548				Canada/Ontario/Niagara	Leaves				JW/S	6/31/2021									White							
+EXP000004	46				Vitis vinifera 		Chardonnay 809				Canada/Ontario/Niagara/Chateau de Charmes	Leaves				JW/S	6/31/2021									White							
+EXP000005	52				Vitis vinifera 		Chardonnay 96				Canada/Ontario/Niagara	Leaves				JW/S	6/31/2021									White							
+EXP000006	45				Vitis vinifera 		Chardonnay 124				Canada/Ontario/Niagara	Leaves				JW/S	6/31/2021									White							
+EXP000008	47				Vitis vinifera 		Chardonnay 77				Canada/Ontario/Niagara	Leaves				JW/S	6/31/2021									White							
+EXP000009	48				Vitis vinifera 		Chardonnay 116				Canada/Ontario/Niagara	Leaves				JW/S	6/31/2021									White							
+EXP000010	44B				Vitis vinifera 		Chardonnay 548				Canada/Ontario/Niagara/Chateau de Charmes	Leaves				JW/S	6/31/2021									White							
+EXP000011	50				Vitis vinifera 		Chardonnay 128				Canada/Ontario/Niagara	Leaves				JW/S	6/31/2021									White							
+EXP000012	51				Vitis vinifera 		Chardonnay 130				Canada/Ontario/Niagara	Leaves				JW/S	6/31/2021									White							
+EXP000014	53				Vitis vinifera 		Chardonnay 95				Canada/Ontario/Niagara	Leaves				JW/S	6/31/2021									White							
+EXP000015	54				Vitis vinifera 		Chardonnay 123				Canada/Ontario/Niagara	Leaves				JW/S	6/31/2021									White							
+EXP000016	55				Vitis vinifera 		Chardonnay 76				Canada/Ontario/Niagara	Leaves				JW/S	6/31/2021									White							
+EXP000001	57				Vitis vinifera		Chardonnay FPS 69				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									White							
+EXP000017	58				Hybrid		Frontenac Blanc* 				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									White							
+EXP000019	59				Vitis vinifera		Gewurztraminer FPS 01 				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									White							
+EXP000022	60				Hybrid		L’Acadie				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									White							
+EXP000023	62				Hybrid		GM 318-57				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									White							
+EXP000024	63				Hybrid		NY Muscat				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									White							
+EXP000025	64				Vitis vinifera		Pinot Gris FPS 04				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									White							
+EXP000026	65				Vitis vinifera		Pinot Gris FPS 09				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									White							
+EXP000028	66				Vitis vinifera		Riesling FPS 01				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									White							
+EXP000029	67				Vitis vinifera		Riesling CGCN 7				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									White							
+EXP000030	68				Vitis vinifera		Riesling CGCN 10				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									White							
+EXP000031	69				Vitis vinifera		Riesling CGCN 11 (239-13 Gm)				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									White							
+EXP000033	70				Vitis vinifera		Sauvignon Blanc FPS 14				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									White							
+EXP000034	71				Vitis vinifera		Sauvignon Blanc FPS 18				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									White							
+EXP000035	73				Vitis vinifera		Sauvignon Blanc FPS 20				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									White							
+EXP000038	16				Hybrid		Vidal 256				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									Red							
+EXP000039	17				Vitis vinifera 		Viognier FPS 05				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									White							
+EXP000041	76				Vitis vinifera		Cabernet Franc FPS 11 				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									red							
+EXP000042	77				Vitis vinifera 		Cabernet Franc FPS 12				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									red							
+EXP000043	78				Vitis vinifera 		Cabernet Franc FPS 33, though to be similar to FPS 34				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									red							
+EXP000045	79				Vitis vinifera 		Cabernet Sauvignon CGCN 07				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									red							
+EXP000047	80				Hybrid		Foch				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									red							
+EXP000048	81				Hybrid		Frontenac				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									red							
+EXP000049	82				Hybrid		Leon Millot				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									red							
+EXP000050	83				Hybrid		Lucie Kuhlman				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									red							
+EXP000051	85				Vitis vinifera		Merlot FPS 15				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									red							
+EXP000052	86				Vitis vinifera		Merlot CGCN 31				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									red							
+EXP000054	88				Vitis vinifera		Pinot Meunier FPS 05				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									red							
+EXP000055	89				Vitis vinifera		Pinot Noir FPS 70				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									red							
+EXP000056	90				Vitis vinifera		Pinot Noir FPS 72				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									red							
+EXP000057	14				Vitis vinifera		Pinot Noir FPS 71				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									Red							
+EXP000058	92				Vitis vinifera		Pinot Noir FPS 73, thought to be similar to FPS 89				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									red							
+EXP000059	93				Vitis vinifera		Pinot Noir FPS 91				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									red							
+EXP000062	94				Vitis vinifera		Shiraz (Syrah) CGCN 17				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									red							
+EXP000090	96				rootstock		101-14				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									rootstock							
+EXP000091	97				rootstock		3309				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									rootstock							
+EXP000092	98				rootstock		Riparia Gloire				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									rootstock							
+EXP000093	100				rootstock		Schwarzmann FPS 01				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									rootstock							
+EXP000094	101				rootstock		SO4 				Canada/Ontario/Niagara/CFIA	Leaves				SP/LZ	27-04-2022									rootstock							
+EXP000007	26				Vitis vinifera 		Chardonnay 809				Canada/Ontario/Niagara/Chateau de Charmes	Leaves				JW/PL	31-07-2019									Red							
+EXP000013	40				Vitis vinifera 		Chardonnay 96				Canada/Ontario/Niagara/Chateau de Charmes	Leaves				JW/PL	31-07-2019									Red							
+EXP000065	34				Vitis vinifera 		Aligote				Canada/Ontario/Niagara/Chateau de Charmes	Leaves				JW/PL	31-07-2019									Red							
+EXP000021	13				Vitis vinifera 		Golden Muscat				Canada/Ontario/Niagara/Cherry Ave	Leaves				JW/PL	31-07-2019									White							
+EXP000085	42				Hybrid		Concord				Canada/Ontario/Niagara/Cherry Ave	Leaves				JW/PL	31-07-2019									Red							
+EXP000087	41				Hybrid		Delaware				Canada/Ontario/Niagara/Cherry Ave	Leaves				JW/PL	31-07-2019									Red							
+EXP000088	6				Hybrid		Vignoles				Canada/Ontario/Niagara/Cherry Ave	Leaves				JW/PL	31-07-2019									White							
+EXP000089	15				Hybrid		L’Acadie blanc				Canada/Ontario/Niagara/Cherry Ave	Leaves				JW/PL	31-07-2019									Red							
+EXP000018	37				Hybrid		Frontenac blanc				Canada/Ontario/Niagara/FUNK	Leaves				JW/PL	31-07-2019									Red							
+EXP000075	30				Hybrid		Marquette				Canada/Ontario/Niagara/FUNK	Leaves				JW/PL	31-07-2019									Red							
+EXP000077	23				Hybrid		Niagara				Canada/Ontario/Niagara/FUNK	Leaves				JW/PL	31-07-2019									Red							
+EXP000079	2				Hybrid		Vidal blanc				Canada/Ontario/Niagara/FUNK	Leaves				JW/PL	31-07-2019									White							
+EXP000080	33				Hybrid		Frontenac noir				Canada/Ontario/Niagara/FUNK	Leaves				JW/PL	31-07-2019									Red							
+EXP000086	17				Hybrid		Dechaunde				Canada/Ontario/Niagara/FUNK	Leaves				JW/PL	31-07-2019									Red							
+EXP000002	8				Vitis vinifera 		Chardonnay				Canada/Ontario/Niagara/Henry of Pelham	Leaves				JW/PL	31-07-2019									White							
+EXP000027	29				Vitis vinifera 		Pinot gris				Canada/Ontario/Niagara/Henry of Pelham	Leaves				JW/PL	31-07-2019									Red							
+EXP000032	7				Vitis vinifera 		Riesling				Canada/Ontario/Niagara/Henry of Pelham	Leaves				JW/PL	31-07-2019									White							
+EXP000036	5				Vitis vinifera 		Sauvignon blanc				Canada/Ontario/Niagara/Henry of Pelham	Leaves				JW/PL	31-07-2019									White							
+EXP000037	20				Vitis vinifera 		Sauvignon blanc				Canada/Ontario/Niagara/Henry of Pelham	Leaves				JW/PL	31-07-2019									Red							
+EXP000044	31				Vitis vinifera 		Cabernet franc				Canada/Ontario/Niagara/Henry of Pelham	Leaves				JW/PL	31-07-2019									Red							
+EXP000046	12				Vitis vinifera 		Cabernet Sauvignon				Canada/Ontario/Niagara/Henry of Pelham	Leaves				JW/PL	31-07-2019									Red							
+EXP000053	3				Vitis vinifera 		Merlot				Canada/Ontario/Niagara/Henry of Pelham	Leaves				JW/PL	31-07-2019									Red							
+EXP000060	4				Vitis vinifera 		Pinot Noir				Canada/Ontario/Niagara/Henry of Pelham	Leaves				JW/PL	31-07-2019									Red							
+EXP000067	1				Vitis vinifera 		Gamay Noir				Canada/Ontario/Niagara/Henry of Pelham	Leaves				JW/PL	31-07-2019									Red							
+EXP000070	11				Vitis vinifera 		Pinot blanc				Canada/Ontario/Niagara/Henry of Pelham	Leaves				JW/PL	31-07-2019									White							
+EXP000083	43				Hybrid		Baco noir				Canada/Ontario/Niagara/Henry of Pelham	Leaves				JW/PL	31-07-2019									Red							
+EXP000084	25				Hybrid		Castel				Canada/Ontario/Niagara/Henry of Pelham	Leaves				JW/PL	31-07-2019									Red							
+EXP000066	35				Vitis vinifera 		Corvina				Canada/Ontario/Niagara/Pilitteri	Leaves				JW/PL	31-07-2019									Red							
+EXP000069	27				Vitis vinifera 		Molinara				Canada/Ontario/Niagara/Pilitteri	Leaves				JW/PL	31-07-2019									Red							
+EXP000071	21				Vitis vinifera 		Rondinella				Canada/Ontario/Niagara/Pilitteri	Leaves				JW/PL	31-07-2019									Red							
+EXP000040	32				Vitis vinifera 		Viognier				Canada/Ontario/Niagara/Queenston Mile	Leaves				JW/PL	31-07-2019									Red							
+EXP000061	36				Vitis vinifera 		Pinot noir				Canada/Ontario/Niagara/Queenston Mile	Leaves				JW/PL	31-07-2019									Red							
+EXP000063	18				Vitis vinifera 		Syrah				Canada/Ontario/Niagara/Queenston Mile	Leaves				JW/PL	31-07-2019									Red							
+EXP000064	38				Vitis vinifera 		Syrah				Canada/Ontario/Niagara/Queenston Mile	Leaves				JW/PL	31-07-2019									Red							
+EXP000020	19				Vitis vinifera 		Gewurztraminer				Canada/Ontario/Niagara/Stratus	Leaves				JW/PL	31-07-2019									Red							
+EXP000068	24				Vitis vinifera 		Malbec				Canada/Ontario/Niagara/Stratus	Leaves				JW/PL	31-07-2019									Red							
+EXP000072	22				Vitis vinifera 		Sangiovese				Canada/Ontario/Niagara/Stratus	Leaves				JW/PL	31-07-2019									Red							
+EXP000073	39				Vitis vinifera 		Semillion				Canada/Ontario/Niagara/Stratus	Leaves				JW/PL	31-07-2019									Red							
+EXP000074	16				Vitis vinifera 		Tempranillo				Canada/Ontario/Niagara/Stratus	Leaves				JW/PL	31-07-2019									Red							
+EXP000078	10				Hybrid		Sovereign Coronation				Canada/Ontario/Niagara/Vineland	Leaves				JW/PL	31-07-2019									Red							
+EXP000076	9				Hybrid		Neptune				Canada/Ontario/Niagara/Vineland Research	Leaves				JW/PL	31-07-2019									White							
+EXP000081	28				Hybrid		Himrod				Canada/Ontario/Niagara/Vineland Research	Leaves				JW/PL	31-07-2019									Red							
+EXP000082	14				Hybrid		Jupiter				Canada/Ontario/Niagara/Vineland Research	Leaves				JW/PL	31-07-2019									Red							

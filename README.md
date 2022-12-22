@@ -1,6 +1,12 @@
 # gdb
 Bioinformatic data analysis pipeline and database for grapevine genetic testing.
 
+### Dependencies
+openpyxl used for Excel file reading:
+```
+$ pip3 install openpyxl
+```
+
 ### QIAxcel Output Preprocessing
 QIAxcel output csv files are preprocessed to obtain the peak calls and format the data. This is done using parse_report.py, or can be facilitated with parse_folder.sh for batch processing.
 
@@ -128,17 +134,18 @@ $ ./generate_db.sh data/ EXP
 Query a database returning the top 3 
 #### query.py
 ```
-usage: query.py [-h] --database DATABASE --folder FOLDER [--num NUM] [--verbose]
-query.py: error: the following arguments are required: --database/-d, --folder/-f
+usage: query.py [-h] --database DATABASE --folder FOLDER --samples SAMPLES [--num NUM] [--verbose]
+query.py: error: the following arguments are required: --database/-d, --folder/-f, --samples/-s
 ```
 
 - DATABASE: Specify Genotype Data Database File.
 - FOLDER: Folder containing processed QIAxcel files. Expected 6 markers, warning will be given if outside of expected range.
-- NUM: Number of returned results in the query.
+- SAMPLES: Specify Samples Data File
+- NUM: Number of returned results in the query. OPTIONAL
 
 Example input:
 ```
-$ ./query.py -d data/EXP -f input/
+$ ./query.py -d data/EXP -f input/ -s Local94SampleInfo.xlsx
 ```
 
 

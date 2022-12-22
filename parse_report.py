@@ -6,14 +6,19 @@ import argparse
 from IPython.display import display
 import pandas as pd
 import os
+import sys
 
 
 # Instantiate the parser
 parser = argparse.ArgumentParser(description='QIAxcel Processing')
 
-# Required input file argument
+# Required arguments
 parser.add_argument("--file", "-f", type=str,
                     help='Input QIAxcel File',required=True)
+parser.add_argument("--name", "-n", type=str,
+                    help='Marker name. Default: File Name', required=True)
+
+# Optional arguments
 parser.add_argument("--size", "-s", type=int,
                     help='Reference size n. Default: 400', required=False)
 parser.add_argument("--range", "-r", type=int,
@@ -22,8 +27,6 @@ parser.add_argument("--lowerBound", "-l", type=int,
                     help='Overrides lower bound defined by range.', required=False)
 parser.add_argument("--upperBound", "-u", type=int,
                     help='Overrides upper bound defined by range.', required=False)
-parser.add_argument("--name", "-n", type=str,
-                    help='Marker name. Default: File Name', required=False)
 parser.add_argument("--verbose", "-v", action="store_true")
 parser.set_defaults(verbose=False)
 
@@ -31,6 +34,9 @@ parser.set_defaults(verbose=False)
 args = parser.parse_args()
 #print("Input File:")
 #print(args.file)
+
+# List of valid markers
+valid_markers = ['AWRI3', 'AWRI4', 'VRZAG62', 'VVMD2', 'YAG1', 'YAG3']
 
 # Read csv
 if args.file is not None:
@@ -49,10 +55,12 @@ if args.file is not None:
     h_ratio = 0.5 # Height ratio
 
     low_conc = 1.0
-    if args.name is None:
-        name = args.file
-    else:
+
+    # Check if valid
+    if args.name in  valid_markers:
         name = args.name
+    else:
+        sys.exit("Error: Marker name must be a valid marker: ["+','.join(valid_markers)+']')
 
     rows = []
 
